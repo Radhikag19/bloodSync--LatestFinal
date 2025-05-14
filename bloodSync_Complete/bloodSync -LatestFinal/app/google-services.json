@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "114446929462",
+    "project_id": "bloodsync1",
+    "storage_bucket": "bloodsync1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114446929462:android:1fe50872754161a4aa9297",
+        "android_client_info": {
+          "package_name": "com.example.bloodsync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDngkUGn5vONfxKtO9N99zoxW58krglWbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

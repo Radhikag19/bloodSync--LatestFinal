@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">bloodSync</string>
+    <string name="next">Next</string>
+    <string name="onboarding_title_1">Donate Blood, Save Lives!</string>
+    <string name="onboarding_desc_1">Join us in making a difference by donating blood to those in need.</string>
+    <string name="onboarding_desc_2">Locate nearby donation camps, book appointments, and track your donations.</string>
+    <string name="onboarding_title_2">Easy Donation Process</string>
+    <string name="onboarding_title_3">Emergency Connect</string>
+    <string name="onboarding_desc_3">In case of emergencies, find nearby blood donors and request help.</string>\
+    <string name="onboarding_next_btn">Next</string>
+    <string name="gender">Gender</string>
+
+    <string-array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="blood_group_array">
+        <item>Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/red"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Enter your details to create account."
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/firstNameEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:hint="First Name"
+                android:minHeight="60dp"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/secondary"
+                android:textSize="14sp"
+                android:background="@drawable/edit_text_border"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"/>
+
+            <EditText
+                android:id="@+id/lastNameEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:minHeight="60dp"
+                android:textColorHint="@color/secondary"
+                android:textSize="14sp"
+                android:background="@drawable/edit_text_border"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/mobileEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:minHeight="60dp"
+            android:textColorHint="@color/secondary"
+            android:textSize="14sp"
+            android:background="@drawable/edit_text_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:minHeight="60dp"
+            android:textColorHint="@color/secondary"
+            android:textSize="14sp"
+            android:background="@drawable/edit_text_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="true"
+            android:hint="Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="textPassword"
+                android:minHeight="60dp"
+                android:textColorHint="@color/secondary"
+                android:textSize="14sp"
+                android:background="@drawable/edit_text_border"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:minHeight="60dp"
+            android:layout_marginTop="12dp">
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:minHeight="50dp"
+                android:fontFamily="@font/poppins"
+                android:entries="@array/gender_array"
+                android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                android:background="@drawable/spinner_border"
+                />
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"
+                android:minHeight="50dp"
+                android:hint="Age"
+                android:textColorHint="@color/secondary"
+                android:inputType="number"
+                android:background="@drawable/edit_text_border"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:maxLength="3" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/locationEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Location"
+            android:minHeight="60dp"
+            android:textColorHint="@color/secondary"
+            android:textSize="14sp"
+            android:background="@drawable/edit_text_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <Spinner
+            android:id="@+id/bloodGroupSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="60dp"
+            android:entries="@array/blood_group_array"
+            android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+            android:background="@drawable/spinner_border"
+            />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/red"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

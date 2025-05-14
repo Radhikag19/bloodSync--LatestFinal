@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.3"
+        android:src="@drawable/blood_donation"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Lives, Find Help!"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_italic"
+            android:textStyle="bold"
+            android:text="Join the Network"
+            android:textColor="@color/red"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/donorButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Donor"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/red"
+            android:minHeight="60dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/seekerButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Seeker"
+            android:minHeight="60dp"
+            android:backgroundTint="@color/red"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15" android:src="@drawable/splash_border" android:scaleType="fitXY"
+        android:rotation="180"/>
+
+</LinearLayout>

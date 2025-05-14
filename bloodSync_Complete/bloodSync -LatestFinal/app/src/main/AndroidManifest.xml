@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BloodSync"
+        tools:targetApi="31">
+
+        <!-- Splash Screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activities -->
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".MainActivityC" android:exported="true" />
+        <activity android:name=".SeekerHomeActivity" android:exported="false" />
+        <activity android:name=".seeker.SeekerHomePage" android:exported="false" />
+        <activity android:name=".seeker.NearbyDonorsActivity" android:exported="false" />
+
+        <!-- Onboarding -->
+        <activity android:name=".onboarding.OnboardingActivity" android:exported="false" />
+
+        <!-- Auth -->
+        <activity android:name=".auth.ChooseProfileActivity" android:exported="false" />
+        <activity android:name=".auth.LoginActivity" android:exported="false" />
+        <activity android:name=".auth.SignupActivity" android:exported="false" />
+
+        <!-- Donor -->
+        <activity android:name=".donor.QuestionnaireActivity" android:exported="false" />
+        <activity android:name=".AwareActivity" android:exported="false" />
+
+        <!-- Add these inside the <application> tag -->
+        <activity android:name=".profile.ProfileActivity"
+            android:exported="false" />
+        <activity android:name=".profile.AccountInfoActivity" android:exported="false" />
+
+        <!-- Meta-data -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBNZcjdsdd420mLrnn1_sWpYUJotnVNM_0" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

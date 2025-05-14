@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login here"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login_illustration"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:minHeight="60dp"
+            android:textColorHint="@color/secondary" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text_border"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:minHeight="60dp"
+            android:textColorHint="@color/secondary" />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Add this TextView that was missing -->
+        <TextView
+            android:id="@+id/createAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="48dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Don't have an account? Create one"
+            android:textColor="@color/red" />
+    </LinearLayout>
+</ScrollView>
